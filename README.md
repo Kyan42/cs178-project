@@ -23,6 +23,6 @@ We train on each variant's *chromosome*, *position*, and *mutatated nucleotide*,
 [More Info on our Datasets and Features](https://docs.google.com/document/d/1Ve1fyprCpVqA8yluqmOKTQsCM4DboclaBZ660_Pp-a8/edit?usp=sharing)
 
 ### Classifier
-After starting with a simple/random model to get a baseline accuracy for our data, we will test multiple types of models with different hyperparameters. These models include naiive Bayes, decision trees, random forests, and neural networks.
+After starting with a simple/random model to get a baseline accuracy for our data, we will test multiple types of models with different hyperparameters. These models include naive Bayes, decision trees, random forests, and XGBoost.
 
 **Which will be the best one???**
