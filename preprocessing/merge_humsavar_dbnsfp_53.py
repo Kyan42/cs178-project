@@ -5,6 +5,7 @@ import glob
 from tqdm import tqdm
 import time
 
+
 if __name__ == "__main__":
     print("\n=======================================")
     print("   FAST HUMSAVAR + dbNSFP 5.3 MERGER")
@@ -110,11 +111,6 @@ if __name__ == "__main__":
 
     query_end = time.time()
     print(f"[INFO] Streaming query finished in {query_end - query_start:.2f} seconds")
-
-
-    #########################################################
-    # SAVE FILE
-    #########################################################
 
     out_file = "data/humsavar_dbnsfp53_merged_fast.csv"
     merged.to_csv(out_file, index=False)
