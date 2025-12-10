@@ -5,21 +5,12 @@ import glob
 from tqdm import tqdm
 import time
 
-
-#########################################################
-# FAST + PROGRESS BARS VERSION
-#########################################################
-
 if __name__ == "__main__":
     print("\n=======================================")
     print("   FAST HUMSAVAR + dbNSFP 5.3 MERGER")
     print("=======================================\n")
 
     start_time = time.time()
-
-    #########################################################
-    # LOAD HUMSAVAR
-    #########################################################
 
     print("[INFO] Loading Humsavar...")
     humsavar = pd.read_csv("data/humsavar_labeled.csv", dtype=str)
@@ -32,11 +23,6 @@ if __name__ == "__main__":
 
     # Convert rsIDs to SQL tuple
     rs_list = "(" + ",".join(f"'{x}'" for x in HUMSAVAR_RS) + ")"
-
-
-    #########################################################
-    # LOCATE dbNSFP FILES
-    #########################################################
 
     print("\n[INFO] Searching for dbNSFP 5.3 chromosome files...")
     db_path = r"C:\Users\Colin\dbNSFP5.3a"
